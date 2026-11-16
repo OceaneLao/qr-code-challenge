@@ -5,42 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style type="text/tailwindcss">
     @theme {
-      --white: hsl(0, 0%, 100%);
-      --slate-300: hsl(212, 45%, 89%);
-      --slate-500: hsl(216, 15%, 48%);
-      --slate-900: hsl(218, 44%, 22%);
-      --font-title: 'Outfit', sans-serif;
+      --color-white: hsl(0, 0%, 100%);
+      --color-slate-300: hsl(212, 45%, 89%);
+      --color-slate-500: hsl(216, 15%, 48%);
+      --color-slate-900: hsl(218, 44%, 22%);
+      --font-display: 'Outfit', sans-serif;
     }
   </style>
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
-<body class="bg-slate-300 font-outfit text-slate-900">
+<body class="bg-slate-300 font-display text-slate-900">
 
   <div class="flex flex-col items-center justify-center min-h-screen">
     <div class="bg-white rounded-xl p-6 max-w-sm shadow-lg">
       <img src="./images/image-qr-code.png" alt="QR Code" class="rounded-lg mb-6">
 
-      <h2 class="font-title text-xl font-bold mb-2 text-center">
+      <h2 class="font-display text-2xl font-bold mb-2 text-center pb-2">
         Improve your front-end skills by building projects
       </h2>
-      <p class="text-slate-500 text-center">
+      <p class="font-display text-lg text-slate-500 text-center">
         Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
       </p>
   
     </div>
   </div>
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
 </body>
 </html>
